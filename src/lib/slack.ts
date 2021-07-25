@@ -18,11 +18,11 @@ export default async({data, url}: slackArgs) => {
             fields: [
                 {
                     type:'mrkdwn',
-                    title: '스마일쿡 Github Repository 📦',
-                    value: "https://github.com/techinpark/pangyo-smilecook",
+                    title: '신사역 점심 Github Repository 📦',
+                    value: "https://github.com/HyeonjuPark/pangyo-smilecook",
                 }, 
             ],
-            footer: 'Github - pangyo-smilecook'
+            footer: 'Github - shinsa-lunch'
         })
     } else {
         message.attachments.push({
@@ -35,7 +35,7 @@ export default async({data, url}: slackArgs) => {
                     value: data,
                 }, 
             ],
-            footer: 'Github - pangyo-smilecook'
+            footer: 'Github - shinsa-lunch'
         })
     }
 

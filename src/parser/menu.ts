@@ -4,7 +4,7 @@ export const parse = async () => {
 
     var fs = require('fs')
     var path = `${process.cwd()}/src/data/`
-    var today = moment().format("YYYY-MM-DD")
+    var today = ['mon','tue','wed','thu','fri','sat'][moment().day()];
     var filename = `${today}.md`
 
     // console.log(path)
