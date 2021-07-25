@@ -26,7 +26,7 @@ export default async({data, url}: slackArgs) => {
         })
     } else {
         message.attachments.push({
-            pretext: '오늘의 한식뷔페 메뉴입니다.',
+            pretext: '오늘의 점심 메뉴입니다.',
             color: "#2eb886",
             fields: [
                 {
