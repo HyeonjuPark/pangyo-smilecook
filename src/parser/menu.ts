@@ -21,7 +21,7 @@ export const parse = async () => {
         '- 뼈해장국 (회사 아래)',
     ];
     let i = 0;
-    let result = [];
+    let result:string[] = [];
     while (i < 3) {
         result = result.concat(list.splice(Math.floor(Math.random() * list.length), 1));
         i++;
