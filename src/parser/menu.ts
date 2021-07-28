@@ -7,7 +7,7 @@ export const parse = async () => {
     var path = `${process.cwd()}/src/data/`
     var today = ['mon','tue','wed','thu','fri','sat'][moment().day()];
     var filename = `${today}.md`
-    var list = [
+    var list: string[] = [
         '- 미분당',
         '- 닭한마리',
         '- 낙지한마리',

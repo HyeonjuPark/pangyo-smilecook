@@ -15,7 +15,7 @@ import slack from './lib/slack'
         // Slack webhook
         if(url.includes('hooks.slack.com')) {   
            await slack({
-               data: parsed.menu,
+               data: parsed.menu ? parsed.menu : '',
                url,
            })
         }
