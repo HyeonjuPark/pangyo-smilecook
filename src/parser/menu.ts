@@ -36,14 +36,45 @@ export const parse = async () => {
         '- 대풍(생선구이)',
         '- 리틀 인디아',
     ];
-    let i = 0;
-    let result:string[] = [];
-    while (i < 3) {
-        result = result.concat(list.splice(Math.floor(Math.random() * list.length), 1));
-        i++;
-    }
+    let people = [
+        '현주',
+        '인석',
+        '지나',
+        '해경',
+        '효진',
+        '희수',
+        '도헌',
+    ];
+    let emojis = [
+        '😉',
+        '🧐',
+        '😀',
+        '😊',
+        '🥠',
+        '🍡',
+        '🍙',
+        '🥟',
+        '🍱',
+        '🌮',
+        '🍔',
+        '🍖',
+        '🥑',
+        '🥦',
+        '🍽',
+        '🙏',
+        '💪',
+        '🤟',
+        '🙃',
+        '🤓',
+    ];
+    // let i = 0;
+    // let result:string[] = [];
+    // while (i < 3) {
+    //     result = result.concat(list.splice(Math.floor(Math.random() * list.length), 1));
+    //     i++;
+    // }
 
-    console.log(result);
+    // console.log(result);
 
     // console.log(path)
     // console.log(today)
@@ -51,7 +82,10 @@ export const parse = async () => {
 
     try {
         // var menu = fs.readFileSync(path + `${filename}`);
-        return result.join('\n');
+        // return result.join('\n');
+        const who = people[Math.floor(Math.random() * people.length)];
+        const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+        return `${who}님! ${emoji}`;
     } catch(err) {
         if (err.code === 'ENOENT') {
             console.log('File not found!');

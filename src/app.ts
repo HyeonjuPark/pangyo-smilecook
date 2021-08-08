@@ -8,6 +8,7 @@ import slack from './lib/slack'
 
     const webhookList = WEBHOOKS.split(",")
     const parsed = await parser() 
+    // console.log('parsed', parsed);
 
     webhookList.map(async url => {
 
