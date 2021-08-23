@@ -26,13 +26,13 @@ export default async({data, url}: slackArgs) => {
         })
     } else {
         message.attachments.push({
-            pretext: '오늘의 점심 메뉴를 픽해주세요.',
+            pretext: '',
             color: "#2eb886",
             fields: [
                 {
                     type:'mrkdwn',
-                    title: '오늘의 식단 🥘',
-                    value: data,
+                    title: '오늘의 점심 메뉴를 픽해주세요 ',
+                    value: `${data}님! 😉`,
                 }, 
             ],
             footer: 'Github - shinsa-lunch'
