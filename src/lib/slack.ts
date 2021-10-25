@@ -31,8 +31,8 @@ export default async({data, url}: slackArgs) => {
             fields: [
                 {
                     type:'mrkdwn',
-                    title: '오늘의 점심 메뉴를 픽해주세요 ',
-                    value: `${data}님! 😉`,
+                    title: '오늘의 점심 메뉴를 고르실 분은~~~?! ',
+                    value: `${data}`,
                 }, 
             ],
             footer: 'Github - shinsa-lunch'
