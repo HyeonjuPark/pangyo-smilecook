@@ -15,7 +15,7 @@ on:
   
   schedule:
     # 매일 아침 11시에 슬랙 알람 발송 (UTC기준)
-    - cron: "0 2 * * 1-5"
+    - cron: "30 1 * * 1-5"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
