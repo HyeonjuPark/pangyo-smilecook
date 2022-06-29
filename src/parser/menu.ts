@@ -44,6 +44,7 @@ export const parse = async () => {
         '효진',
 	'영호',
         '지성',
+	'상봉',
     ];
     let emojis = [
         '😉',
